@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AStationToTheEndGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainBackGroud.png" translatesAutoresizingMaskIntoConstraints="NO" id="wRt-Yf-flx">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainTag.png" translatesAutoresizingMaskIntoConstraints="NO" id="5q1-NE-z1i">
+                                <rect key="frame" x="43" y="48" width="403" height="213"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="RPM-Mb-6iF">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNE-Ql-bVG">
+                                <rect key="frame" x="346" y="240" width="100" height="50"/>
+                                <state key="normal" title="Button" image="一战到底暗.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickAnswerBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vIh-xB-Wxn"/>
+                                    <segue destination="KFd-dc-td2" kind="show" id="Wsi-j6-QIl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkZ-gc-klf">
+                                <rect key="frame" x="194" y="240" width="100" height="50"/>
+                                <state key="normal" title="Button" image="shop.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickShopBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hKD-RA-Aky"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMd-7e-rql">
+                                <rect key="frame" x="50" y="240" width="100" height="50"/>
+                                <state key="normal" title="Button" image="tiku.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickTKBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aiw-4n-L14"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="lightImageView" destination="RPM-Mb-6iF" id="xCY-GC-Ua2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13" y="145"/>
+        </scene>
+        <!--Choose View Controller-->
+        <scene sceneID="6N1-Em-uBk">
+            <objects>
+                <viewController id="KFd-dc-td2" customClass="ChooseViewController" customModule="AStationToTheEndGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Osk-Ju-j1C"/>
+                        <viewControllerLayoutGuide type="bottom" id="E8T-nn-iem"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IQx-AY-DuU">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainBackGroud.png" translatesAutoresizingMaskIntoConstraints="NO" id="gDr-kb-3yz">
+                                <rect key="frame" x="0.0" y="0.0" width="485" height="325"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDs-i3-BoK">
+                                <rect key="frame" x="174" y="179" width="150" height="100"/>
+                                <state key="normal" title="Button" image="suo_ding.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5m4-RW-7JE">
+                                <rect key="frame" x="321" y="174" width="150" height="100"/>
+                                <state key="normal" title="Button" image="suo_ding.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnN-YD-PJl">
+                                <rect key="frame" x="10" y="179" width="150" height="100"/>
+                                <state key="normal" title="Button" image="suo_ding.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Nm-eJ-5pp">
+                                <rect key="frame" x="10" y="41" width="150" height="100"/>
+                                <state key="normal" title="Button" image="suo_kai.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickAnswerViewBtn:" destination="KFd-dc-td2" eventType="touchUpInside" id="pCB-fF-aqc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90i-g5-Tgp">
+                                <rect key="frame" x="174" y="41" width="150" height="100"/>
+                                <state key="normal" title="Button" image="suo_ding.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dcz-bT-aKB">
+                                <rect key="frame" x="321" y="41" width="150" height="100"/>
+                                <state key="normal" title="Button" image="suo_ding.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="第4季.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gcb-nX-yid">
+                                <rect key="frame" x="10" y="179" width="129" height="93"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="第5季.png" translatesAutoresizingMaskIntoConstraints="NO" id="SLZ-Qe-RaJ">
+                                <rect key="frame" x="178" y="179" width="129" height="93"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="第3季.png" translatesAutoresizingMaskIntoConstraints="NO" id="VhK-Ua-pMo">
+                                <rect key="frame" x="327" y="46" width="129" height="93"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="第2季.png" translatesAutoresizingMaskIntoConstraints="NO" id="OBv-iR-EPu">
+                                <rect key="frame" x="178" y="46" width="129" height="93"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="第6季.png" translatesAutoresizingMaskIntoConstraints="NO" id="txL-gg-wrR">
+                                <rect key="frame" x="327" y="179" width="129" height="93"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9WU-TN-sac">
+                                <rect key="frame" x="16" y="140" width="105" height="50"/>
+                                <state key="normal" title="Button" image="left_arrow.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="2jM-as-DAs"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="第1季.png" translatesAutoresizingMaskIntoConstraints="NO" id="u71-44-TCd">
+                                <rect key="frame" x="21" y="46" width="129" height="93"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4xo-Gf-wbw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="145"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.png" width="960" height="462"/>
+        <image name="left_arrow.png" width="50" height="50"/>
+        <image name="mainBackGroud.png" width="960" height="640"/>
+        <image name="mainTag.png" width="960" height="640"/>
+        <image name="shop.png" width="189" height="70"/>
+        <image name="suo_ding.png" width="117" height="90"/>
+        <image name="suo_kai.png" width="233" height="179"/>
+        <image name="tiku.png" width="190" height="70"/>
+        <image name="一战到底暗.png" width="189" height="70"/>
+        <image name="第1季.png" width="75" height="33"/>
+        <image name="第2季.png" width="75" height="33"/>
+        <image name="第3季.png" width="75" height="33"/>
+        <image name="第4季.png" width="75" height="33"/>
+        <image name="第5季.png" width="75" height="33"/>
+        <image name="第6季.png" width="75" height="33"/>
+    </resources>
+</document>
