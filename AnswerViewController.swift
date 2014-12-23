@@ -34,8 +34,8 @@ class AnswerViewController: UIViewController {
         backBtn.frame = CGRectMake(5, 140, 50, 50)
         var arrowImg = UIImage(named: "left_arrow.png")
         backBtn.setImage(arrowImg, forState: UIControlState.Normal)
-        self.view.addSubview(backBtn)
         backBtn.addTarget(self, action: "turnBack", forControlEvents: UIControlEvents.TouchUpInside)
+        self.view.addSubview(backBtn)
         
         var questionLabel = UILabel()
         questionLabel.frame = CGRectMake(80, 100, 320, 80)
@@ -43,7 +43,44 @@ class AnswerViewController: UIViewController {
         questionLabel.textAlignment = .Center
         self.view.addSubview(questionLabel)
     
+        addBtn(CGRectMake(30, 210, 220, 40), tag:1)
+        addBtn(CGRectMake(230, 210, 220, 40), tag:2)
+        addBtn(CGRectMake(30, 260, 220, 40), tag:3)
+        addBtn(CGRectMake(230, 260, 220, 40), tag:4)
         
+        var timeLabel = UILabel()
+        timeLabel.frame = CGRectMake(10, 20, 100, 40)
+        timeLabel.text = "00:00"
+        timeLabel.textAlignment = .Center
+        timeLabel.backgroundColor = UIColor.blueColor()
+        self.view.addSubview(timeLabel)
+    }
+    
+    func addBtn(frame:CGRect, tag:Int) {
+        var btn = UIButton()
+        btn.frame = frame
+        btn.tag = tag
+        btn.setImage(UIImage(named: "平时状态@2x.png"), forState: .Normal)
+        btn.addTarget(self, action: "judgeResult:", forControlEvents: .TouchUpInside)
+        self.view.addSubview(btn)
+        
+        var btnLabel = UILabel()
+        btnLabel.frame = frame
+        btnLabel.text = questionInfo[currentQuestionIndex][tag]
+        btnLabel.textColor = UIColor.whiteColor()
+        btnLabel.textAlignment = .Center
+        self.view.addSubview(btnLabel)
+    }
+    
+    func judgeResult(sender:UIButton) {
+        var tag = sender.tag
+        println("click btn tag is \(tag)")
+        
+        if (tag == answerInfo[currentQuestionIndex]) {
+            sender.setImage(UIImage(named: "答对@2x.png"), forState: .Normal)
+        } else {
+            sender.setImage(UIImage(named: "答错@2x.png"), forState: .Normal)
+        }
     }
     
     override func didReceiveMemoryWarning() {
