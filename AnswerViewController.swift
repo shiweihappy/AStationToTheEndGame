@@ -18,6 +18,7 @@ class AnswerViewController: UIViewController {
     ]
     let answerInfo = [1, 2, 4]
     
+    var currentQuestionIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +38,11 @@ class AnswerViewController: UIViewController {
         backBtn.addTarget(self, action: "turnBack", forControlEvents: UIControlEvents.TouchUpInside)
         
         var questionLabel = UILabel()
-        questionLabel.frame = CGRectMake(<#x: CGFloat#>, <#y: CGFloat#>, <#width: CGFloat#>, <#height: CGFloat#>)
+        questionLabel.frame = CGRectMake(80, 100, 320, 80)
+        questionLabel.text = questionInfo[currentQuestionIndex][0]
+        questionLabel.textAlignment = .Center
+        self.view.addSubview(questionLabel)
+    
         
     }
     
